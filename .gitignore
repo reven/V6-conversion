@@ -1,0 +1,127 @@
+# Junk files
+*.bak
+*.swp
+*~
+.DS_Store
+._*
+
+# Merge files
+*.orig
+*.rej
+
+# Build artifacts
+.clang_complete
+.build/
+*.elf
+*.log
+*.lss
+*.lst
+*.map
+*.o
+*.stackdump
+*.sym
+
+# QMK-specific
+api_data/v1
+quantum/version.h
+*.bin
+*.eep
+*.hex
+*.qmk
+*.uf2
+
+# DD config at wrong location
+/keyboards/**/keymaps/*/info.json
+
+# Old-style QMK Makefiles
+/keyboards/**/Makefile
+
+# kbfirmware....
+/keyboards/**/kb.h
+/keyboards/**/kb.c
+
+# Eclipse/PyCharm/Other IDE Settings
+*.iml
+.browse.VC.db*
+.cproject
+.idea
+.idea/
+.project
+.settings/
+
+# ?
+.dep
+.history/
+build/
+cmake-build-debug
+CMakeLists.txt
+*.pdf
+
+# Let these ones be user specific, since we have so many different configurations
+*.code-workspace
+.stfolder
+.tags
+.vscode/c_cpp_properties.json
+.vscode/ipch/
+.vscode/last.sql
+.vscode/launch.json
+.vscode/tasks.json
+.vscode/temp.sql
+tags
+
+# Things Travis sees
+/.vs
+id_rsa_*
+secrets.tar
+
+# Python things
+__pycache__
+.python-version
+.venv
+
+# Prerequisites for updating ChibiOS
+/util/fmpp*
+
+# Allow to exist but don't include it in the repo
+user_song_list.h
+
+# clangd
+compile_commands.json
+.clangd/
+.cache/
+
+# VIA(L) files that don't belong in QMK repo
+via*.json
+/keyboards/**/keymaps/vial/*
+
+# For PCBs designed using KiCad: https://www.kicad.org/
+# Format documentation: https://kicad.org/help/file-formats/
+
+# Temporary files
+*.000
+*.bak
+*.bck
+*.kicad_pcb-bak
+*.kicad_sch-bak
+*-backups
+*.kicad_prl
+*.sch-bak
+*~
+_autosave-*
+*.tmp
+*-save.pro
+*-save.kicad_pcb
+fp-info-cache
+~*.lck
+\#auto_saved_files#
+
+# Netlist files (exported from Eeschema)
+*.net
+
+# Autorouter files (exported from Pcbnew)
+*.dsn
+*.ses
+
+# Exported BOM files
+*.xml
+*.csv
